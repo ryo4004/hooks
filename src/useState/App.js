@@ -14,7 +14,7 @@ const Counter = () => {
   const [count, setCount] = useState(initialState)
 
   return (
-    <div>
+    <div className='counter'>
       <span>Count: {count}</span>
       <div>
         <button onClick={() => setCount(initialState)}>Reset</button>
