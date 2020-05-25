@@ -2,8 +2,14 @@
   text-align: center;
 
   .counter {
+    margin: 16px 0;
+
+    div {
+      margin: 8px;
+    }
+
     button {
-      margin: 0 4px;
+      margin: 4px;
     }
   }
 }
