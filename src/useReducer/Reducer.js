@@ -3,7 +3,6 @@ export const initialState = {
 }
 
 export const reducer = (state, action) => {
-  console.log('reducer', {state, action})
   switch (action.type) {
     case 'reset':
       return {count: initialState.count}
