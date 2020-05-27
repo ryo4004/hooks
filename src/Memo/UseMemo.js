@@ -5,8 +5,9 @@ const Memo = () => {
   const [count, setCount] = useState(0)
 
   const data = useFetch('https://app.winds-n.com/web/concert')
+  // const data = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-  function calculation () {
+  function calculation (arr) {
     console.log('called calclation')
     const list = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
     return list.reduce((a, b) => a + b, 0)
