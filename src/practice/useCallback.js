@@ -6,11 +6,11 @@ const Callback = () => {
   const data = 'sample';
 
   function calculation (arr) {
-    console.log('[useCallback] called calclation');
+    console.log('[useCallback] calclation');
     return arr.length;
   }
 
-  const calculated = useCallback(() => calculation(data), [data]);
+  const calculated = useCallback(calculation(data), [data]);
 
   console.log('[useCallback] render');
 

@@ -10,8 +10,10 @@ import React from 'react';
 
 import UseState from './practice/useState';
 import UseReducer from './practice/useReducer';
+import UseReducerSimple from './practice/useReducerSimple';
 import UseReducerTodo from './practice/useReducerTodo';
 import UseCallback from './practice/useCallback';
+import UseCallbackEvent from './practice/useCallbackEvent';
 import UseMemo from './practice/useMemo';
 import NotUseMemo from './practice/notUseMemo';
 import './App.scss';
@@ -32,10 +34,14 @@ const App = () => {
       <UseState initialCount={0} />
       <h2>useReducer</h2>
       <UseReducer />
+      <h2>useReducerSimple</h2>
+      <UseReducerSimple />
       <h2>Todo with useReducer</h2>
       <UseReducerTodo />
       <h2>useCallback</h2>
       <UseCallback />
+      <h2>useCallbackEvent</h2>
+      <UseCallbackEvent />
       <h2>useMemo</h2>
       <UseMemo />
       <h2>not useMemo</h2>

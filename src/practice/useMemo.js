@@ -6,7 +6,7 @@ const Memo = () => {
   const data = 'sample';
 
   function calculation (arr) {
-    console.log('[useMemo] called calclation');
+    console.log('[useMemo] calclation');
     return arr.length;
   }
 
