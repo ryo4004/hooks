@@ -7,11 +7,9 @@ const Memo = () => {
 
   function calculation (arr) {
     if (!arr) return false
-    // console.log('called calclation')
+    console.log('called calclation')
     return arr.reduce((a, b) => a + b, 0)
   }
-
-  console.log('called')
 
   return (
     <div className='counter'>

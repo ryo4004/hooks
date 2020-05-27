@@ -43,6 +43,8 @@ const Todov2 = () => {
     dispatch({type: 'add', value: input})
   }
 
+  console.log('run render')
+
   return (
     <>
       <h2>Todo with useReducer v2</h2>
@@ -50,6 +52,7 @@ const Todov2 = () => {
         <input value={input} onChange={e => dispatch({type: 'input', value: e.target.value})} />
       </form>
       <button onClick={() => dispatch({type: 'clear'})}>Clear</button>
+      <button onClick={() => dispatch({type: 'nothing'})}>nothing</button>
       <ul>
         {items.map((item, index) => {
           return <li key={item.id}>{item.value} <button onClick={() => dispatch({type: 'remove', id: index})}>x</button></li>
